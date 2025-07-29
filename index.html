@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Captured Moments</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 30px;
+      font-family: 'Segoe UI', sans-serif;
+      background: #ffeef2;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #d81b60;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .photo {
+      background: #fff;
+      border: 2px solid #ddd;
+      width: 250px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      transform: rotate(-2deg);
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .photo:hover {
+      transform: rotate(0deg) scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .photo img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .caption {
+      padding: 15px 10px 20px;
+      font-style: italic;
+      font-size: 1rem;
+      text-align: center;
+      color: #555;
+    }
+
+    .photo:nth-child(3n) {
+      transform: rotate(3deg);
+    }
+
+    .photo:nth-child(4n) {
+      transform: rotate(-4deg);
+    }
+
+    @media (max-width: 600px) {
+      .photo {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Captured Moments</h1>
+  <div class="gallery">
+    <div class="photo">
+      <img src="image1.jpg" alt="Sunset at the lake">
+      <div class="caption">Golden sunset at the lake</div>
+    </div>
+    <div class="photo">
+      <img src="image2.jpg" alt="Mountain trail">
+      <div class="caption">Chasing clouds in the Rockies</div>
+    </div>
+    <div class="photo">
+      <img src="image3.jpg" alt="City lights">
+      <div class="caption">Midnight walks under neon skies</div>
+    </div>
+    <!-- Add more photos here -->
+  </div>
+</body>
+</html>
